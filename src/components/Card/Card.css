@@ -1,0 +1,17 @@
+/* src/components/Card/Card.css */
+.card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+  
+  .card-content {
+    font-size: 14px;
+  }
+  

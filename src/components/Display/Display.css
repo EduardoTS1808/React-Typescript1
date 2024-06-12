@@ -1,0 +1,17 @@
+/* src/components/Display/Display.css */
+.display {
+    font-family: Arial, sans-serif;
+  }
+  
+  .display--small {
+    font-size: 14px;
+  }
+  
+  .display--medium {
+    font-size: 18px;
+  }
+  
+  .display--large {
+    font-size: 24px;
+  }
+  

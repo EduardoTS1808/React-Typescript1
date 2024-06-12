@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Container from './components/Container/Container';
+import Card from './components/Card/Card';
+import Alert from './components/Alert/Alert';
+import Image from './components/Images/Image';
+
+
+
 
 function App() {
   return (
+    
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+      <Container>
+  <Alert message=" tudo certo" type="success"/>
+  <Card title="Card Titulo" content=" Exemplo de exibição de texto content." />
+  <Image
+  src="https://via.placeholder.com/150"
+  alt="Placeholder Image"
+  width="150px"
+  height="150px"
+  borderRadius="8px"
+/>
+</Container>
+
+<Container fluid>
+  <Card title="Card Titulo" content=" Exemplo de exibição de texto content." />
+</Container>
+
       </header>
     </div>
+      
   );
 }
 
