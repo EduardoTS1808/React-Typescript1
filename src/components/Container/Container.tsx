@@ -1,13 +1,11 @@
-// src/components/Container/Container.tsx
-import React from 'react';
 import './Container.css';
 
-interface ContainerProps {
-  children: React.ReactNode;
+interface ContainerProps<T> {
+  children: T;
   fluid?: boolean;
 }
 
-const Container: React.FC<ContainerProps> = ({ children, fluid = false }) => {
+const Container = <T,>({ children , fluid = false}: ContainerProps<T>): JSX.Element => {
   return <div className={fluid ? 'container-fluid' : 'container'}>{children}</div>;
 };
 

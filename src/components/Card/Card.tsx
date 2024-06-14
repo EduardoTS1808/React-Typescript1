@@ -1,15 +1,17 @@
-// src/components/Card/Card.tsx
-import React from 'react';
-import './Card.css';
 
+  import React from 'react';
+  import './Card.css';
+  
 interface CardProps {
   title: string;
   content: string;
+  footer?: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, content }) => {
+const Card: React.FC<Omit<CardProps, 'footer'>> = ({ title, content }) => {
   return (
-    <div className="card">
+  
+      <div className="card">
       <h2 className="card-title">{title}</h2>
       <p className="card-content">{content}</p>
     </div>

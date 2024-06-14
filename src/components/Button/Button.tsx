@@ -1,4 +1,4 @@
-// src/components/Button/Button.tsx
+
 import React from 'react';
 import './Button.css';
 
@@ -9,7 +9,8 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick, variant = 'primary', disabled = false }) => {
+// Envolva o ButtonProps com Partial para tornar todas as propriedades opcionais
+const Button: React.FC<Partial<ButtonProps>> = ({ label = 'Default Label', onClick, variant = 'primary', disabled = false }) => {
   return (
     <button
       className={`button button--${variant}`}
@@ -22,3 +23,4 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, variant = 'primary', di
 };
 
 export default Button;
+
